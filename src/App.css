@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  background-color: #8b8ea2;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .App-logo {
@@ -21,11 +24,11 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #be8c8c;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #132e38;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +38,151 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App-new {
+
+  background-color: #8f8fcb;
+
+
+}
+
+.box{
+  height: 5%;
+width: 100%;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.box1{
+  height: 50%;
+  width: 20%;
+  background-color: #8f8fcb;
+  display: flex;
+  flex-direction: column;
+}
+.box2{
+  background-color: red;
+
+}
+.box3
+{
+  background-color: #8f8fcb;
+}
+.img {
+  height: 50px;
+  width: 50px;
+}
+.d-flex{
+  display:flex;
+
+  flex-wrap: wrap;
+
+}
+.userImg {
+  border-radius: 50%;
+}
+.center {
+  justify-content: center;
+  display: flex;
+}
+
+.footer {
+  height: 10%;
+  width: 100%;
+  border: black solid 1px;
+}
+
+.userBox {
+  height: 400px;
+  width: 30%;
+  border: black solid 2px;
+}
+
+.allReviews {
+  height: 400px;
+  width: 70%;
+  border: black solid 2px;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+}
+.d-flex1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.space-btw {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+.mainPageBg{
+  background-color: #8f8fcb;
+  height: 300px;
+ background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.A86ckD2Fq01k7CNxgGX6yQHaEw%26pid%3DApi&f=1");
+
+
+
+}
+
+
+.center {
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.footer{
+  border: #f4f4f4;
+  top: 0px;
+  height: 50px;
+  background-color: #8b8ea2;
+}
+.navbar{
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  background-color: #f4f4f4;
+
+}
+.numberBox {
+
+  border: #8b8ea2 1px solid;
+}
+.textCenter {
+  text-align: center;
+}
+.inputs {
+  border: #7fb65b 2px solid;
+  box-shadow: black;
+}
+
+.carouselImg{
+  height: 100px;
+  width: 100px;
+}
+.fontColor {
+  color: black;
+}
+.carouselBox {
+  height: 400px;
+  width: 100%;
+  border: 1px solid black;
+  padding: 50px;
+}
+
+.space {
+    display: flex;
+    justify-content: space-between;
+}
+
+.justify{
+    justify-content: space-around;
 }
