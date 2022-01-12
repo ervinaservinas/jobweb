@@ -1,43 +1,49 @@
 import './App.css';
-import Shop from "./pages/Shop";
-import Inventory from "./pages/inventory"
-import Cart from "./pages/Cart";
-import ReactDOM from "react-dom";
-import {BrowserRouter, Routes, Route} from "react-router-dom"
-import {useState} from "react";
-import MainContext from "./Context/MainContext";
+import {useState, useEffect} from "react";
 
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import MainContext from "./components/MainContext";
+import Shop from "./Pages/Shop";
+import Inventory from "./Pages/inventory";
+import Toolbar from "./components/Toolbar";
 
 function App() {
 
 
+    const [getInventory, setInventory] = useState([])
+    const [getEquipment, setEquipment] = useState({
+        head: null,
+        shoulders: null,
+        chest: null,
+        hands: null,
+        legs: null
+    })
+
+    useEffect(() => {
+        console.log('changed')
+    }, [getInventory])
 
     return (
+        <MainContext.Provider value={{
+            getInventory,
+            setInventory,
+            getEquipment,
+            setEquipment
+        }}>
 
-        <div>
-sdf
             <BrowserRouter>
-                <div className="d-flex">
+                <Toolbar/>
 
-                    <div className="grow1">
-                        <toolbar/>
-                        <Routes>
-                            <Route path="/home" element={<Shop/>}>
-                            </Route>
-                            <Route path="/inventory" element={<Inventory/>}>
-                            </Route>
-                            <Route path="/character" element={<Cart/>}>
-                            </Route>
+                <Routes>
 
-                        </Routes>
-                    </div>
+                    <Route path="/" element={<Inventory/>}/>
+                    <Route path="/shop" element={<Shop/>}/>
 
-                </div>
-
+                </Routes>
             </BrowserRouter>
-        </div>
+
+        </MainContext.Provider>
     );
 }
-
 
 export default App;

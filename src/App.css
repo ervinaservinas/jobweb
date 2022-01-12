@@ -1,204 +1,96 @@
-.App {
-
-  background-color: #8b8ea2;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #be8c8c;
-}
-
-.App-link {
-  color: #132e38;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.App-new {
-
-  background-color: #8f8fcb;
-
-
-}
-
-.box{
-  height: 5%;
-width: 100%;
-  border: 2px solid black;
-  display: flex;
-  justify-content: space-evenly;
-
-}
-.box1{
-  height: 50%;
-  width: 20%;
-  background-color: #8f8fcb;
-  display: flex;
-  flex-direction: column;
-}
-.box2{
-  background-color: red;
-
-}
-.box3
-{
-  background-color: #8f8fcb;
-}
-.img {
-  height: 150px;
-  width: 150px;
-}
-.d-flex{
-  display:flex;
-
-  flex-wrap: wrap;
-
-}
-.userImg {
-  border-radius: 50%;
-}
-.center {
-  justify-content: center;
-  display: flex;
-}
-
-.footer {
-  height: 10%;
-  width: 100%;
-  border: black solid 1px;
-}
-
-.userBox {
-  height: 400px;
-  width: 30%;
-  border: black solid 2px;
-}
-
-.allReviews {
-  height: 400px;
-  width: 70%;
-  border: black solid 2px;
-}
-
 .d-flex {
   display: flex;
-  justify-content: center;
 }
-.d-flex1 {
-  display: flex;
+
+.column  {
   flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
 }
 
 .space-btw {
-  display: flex;
   justify-content: space-between;
-  margin: 20px;
-}
-.mainPageBg{
-  background-color: #8f8fcb;
-  height: 300px;
- background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.A86ckD2Fq01k7CNxgGX6yQHaEw%26pid%3DApi&f=1");
-
-
-
 }
 
-
-.center {
-
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-left: 50px;
-  margin-top: 50px;
+.p-20 {
+  padding: 20px;
 }
 
-.footer{
-  border: #f4f4f4;
-  top: 0px;
-  height: 50px;
-  background-color: #8b8ea2;
-}
-.navbar{
-  position: fixed;
-  height: 50px;
-  width: 100%;
-  background-color: #f4f4f4;
-
-}
-.numberBox {
-
-  border: #8b8ea2 1px solid;
-}
-.textCenter {
-  text-align: center;
-}
-.inputs {
-  border: #7fb65b 2px solid;
-  box-shadow: black;
+.grow1 {
+  flex: 1;
 }
 
-.carouselImg{
-  height: 100px;
+.item {
+  padding: 20px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  margin: 10px;
   width: 100px;
 }
-.fontColor {
-  color: black;
+
+.item:hover {
+  background-color: #e3e3e3;
+
 }
-.carouselBox {
-  height: 650px;
+
+.item div {
+  margin-bottom: 5px;
+}
+
+.color {
+  height: 10px;
+}
+
+a {
+  margin: 20px;
+}
+
+.char {
+  width: 400px;
+}
+
+.charWrapper {
+  position: relative;
+}
+
+.slot {
+  background-color: #d2d2d2;
+  border-radius: 5px;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  overflow: hidden;
+
+}
+.slot img {
+  height: 100%;
   width: 100%;
-  border: 1px solid black;
-  padding: 50px;
 }
 
-.space {
-    display: flex;
-    justify-content: space-between;
+
+.headSlot {
+  left: 100px;
+  top: 20px
 }
 
-.justify{
-    justify-content: space-around;
+.shoulderSlot {
+  left: 250px;
+  top: 70px
 }
 
-.toolbar {
-
-  lenght: 100%;
-background-color: #607e7e;
+.chestSlot {
+  left: 150px;
+  top: 120px
 }
-.textColor {
-  color: red;
-}
-.card {
 
-  width: 250px;
-  margin: 10px;
-  display: flex;
-  justify-content: center;
+.handsSlot {
+  left: 80px;
+  top: 200px
+}
+
+.legsSlot {
+  left: 250px;
+  top: 280px
 }
